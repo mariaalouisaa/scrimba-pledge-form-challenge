@@ -1,11 +1,12 @@
 const body = document.body;
+let formElem = document.querySelector("#form");
 const formSubmit = document.getElementById("form-submit");
 const checkboxes = document.getElementsByClassName("checkbox");
 const checkboxesContainer = document.getElementById("checkboxes-container");
 
-document.querySelector("#form").addEventListener("submit", (e) => {
+formElem.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("skjbkj");
+  formElem.style.display = "none";
 });
 
 // Task:
