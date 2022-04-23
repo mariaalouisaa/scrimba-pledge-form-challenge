@@ -94,4 +94,5 @@ form > input[type="submit"] :active {
   box-shadow: var(--box-shadow);
   text-align: center;
   font-size: larger;
+  display: none;
 }

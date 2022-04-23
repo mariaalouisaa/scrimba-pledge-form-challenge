@@ -1,5 +1,6 @@
 const body = document.body;
-let formElem = document.querySelector("#form");
+const formElem = document.querySelector("#form");
+const thanksMessage = document.querySelector("#thanks");
 const formSubmit = document.getElementById("form-submit");
 const checkboxes = document.getElementsByClassName("checkbox");
 const checkboxesContainer = document.getElementById("checkboxes-container");
@@ -7,6 +8,7 @@ const checkboxesContainer = document.getElementById("checkboxes-container");
 formElem.addEventListener("submit", (e) => {
   e.preventDefault();
   formElem.style.display = "none";
+  thanksMessage.style.display = "block";
 });
 
 // Task:
