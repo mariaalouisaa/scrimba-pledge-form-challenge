@@ -84,3 +84,14 @@ form > input[type="submit"] :active {
 .checkboxes-container {
   padding: 0.5em 1em;
 }
+
+.thanks {
+  padding: 1em 2em;
+  max-width: 200px;
+  margin: 0 auto;
+  background: var(--light-steel-blue);
+  border-radius: var(--border-rad-5);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  font-size: larger;
+}
