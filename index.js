@@ -14,7 +14,10 @@ formElem.addEventListener("submit", (e) => {
 });
 
 // Disable the button when no checkboxes are checked.
-const checkchecked = () => console.log("check");
+const checkchecked = () => {
+  let checked = Array.from(checkboxes).some((box) => box.checked);
+  checked ? (formSubmit.disabled = false) : (formSubmit.disabled = true);
+};
 
 Array.from(checkboxes).forEach((box) => {
   box.addEventListener("click", checkchecked);
@@ -28,4 +31,4 @@ Array.from(checkboxes).forEach((box) => {
 
 // stretch goal 2️⃣:  Personalise the thank you message with the user's name.
 
-// stretch goal 3️⃣:  Disable the button when no checkboxes are checked.
+// ✔️ stretch goal 3️⃣:  Disable the button when no checkboxes are checked.
