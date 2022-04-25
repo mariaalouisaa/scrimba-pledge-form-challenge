@@ -30,6 +30,6 @@ checkboxes.forEach((box) => box.addEventListener("click", checkchecked));
 
 // stretch goal 1️⃣:  Add warning styling if the name and email fields are empty (you might not need JS for this either)
 
-// stretch goal 2️⃣:  Personalise the thank you message with the user's name.
+// ✔️ stretch goal 2️⃣:  Personalise the thank you message with the user's name.
 
 // ✔️ stretch goal 3️⃣:  Disable the button when no checkboxes are checked.
