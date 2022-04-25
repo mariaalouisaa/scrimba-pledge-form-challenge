@@ -14,6 +14,11 @@ formElem.addEventListener("submit", (e) => {
 });
 
 // Disable the button when no checkboxes are checked.
+const checkchecked = () => console.log("check");
+
+Array.from(checkboxes).forEach((box) => {
+  box.addEventListener("click", checkchecked);
+});
 
 // Task:
 // ✔️ Part 1: Add validation to check that the name and email fields are filled in and display a warning message if not (you might not need JS for this 😜).
