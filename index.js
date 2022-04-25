@@ -13,7 +13,7 @@ formElem.addEventListener("submit", (e) => {
 
 // Task:
 // ✔️ Part 1: Add validation to check that the name and email fields are filled in and display a warning message if not (you might not need JS for this 😜).
-// Part 2: Hide the form and show a thank you message on submit.
+// ✔️ Part 2: Hide the form and show a thank you message on submit.
 
 // stretch goal 1️⃣:  Add warning styling if the name and email fields are empty (you might not need JS for this either)
 
