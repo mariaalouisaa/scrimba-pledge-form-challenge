@@ -2,7 +2,7 @@ const body = document.body;
 const formElem = document.querySelector("#form");
 const thanksMessage = document.querySelector("#thanks");
 const formSubmit = document.getElementById("form-submit");
-const checkboxes = document.getElementsByClassName("checkbox");
+const checkboxes = Array.from(document.getElementsByClassName("checkbox"));
 const checkboxesContainer = document.getElementById("checkboxes-container");
 const nameInput = document.querySelector("#name");
 let userName;
@@ -19,13 +19,10 @@ formElem.addEventListener("submit", (e) => {
 
 // Disable the button when no checkboxes are checked.
 const checkchecked = () => {
-  let checked = Array.from(checkboxes).some((box) => box.checked);
+  let checked = checkboxes.some((box) => box.checked);
   checked ? (formSubmit.disabled = false) : (formSubmit.disabled = true);
 };
-
-Array.from(checkboxes).forEach((box) => {
-  box.addEventListener("click", checkchecked);
-});
+checkboxes.forEach((box) => box.addEventListener("click", checkchecked));
 
 // Task:
 // ✔️ Part 1: Add validation to check that the name and email fields are filled in and display a warning message if not (you might not need JS for this 😜).
