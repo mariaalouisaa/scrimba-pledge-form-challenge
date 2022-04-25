@@ -4,11 +4,15 @@ const thanksMessage = document.querySelector("#thanks");
 const formSubmit = document.getElementById("form-submit");
 const checkboxes = document.getElementsByClassName("checkbox");
 const checkboxesContainer = document.getElementById("checkboxes-container");
+const nameInput = document.querySelector("#name");
+let userName;
 
 // Hide form and show message on submit
 
 formElem.addEventListener("submit", (e) => {
   e.preventDefault();
+  userName = nameInput.value;
+  thanksMessage.innerHTML = `Thanks for submitting ${userName}!`;
   formElem.style.display = "none";
   thanksMessage.style.display = "block";
 });
