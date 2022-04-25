@@ -5,11 +5,15 @@ const formSubmit = document.getElementById("form-submit");
 const checkboxes = document.getElementsByClassName("checkbox");
 const checkboxesContainer = document.getElementById("checkboxes-container");
 
+// Hide form and show message on submit
+
 formElem.addEventListener("submit", (e) => {
   e.preventDefault();
   formElem.style.display = "none";
   thanksMessage.style.display = "block";
 });
+
+// Disable the button when no checkboxes are checked.
 
 // Task:
 // ✔️ Part 1: Add validation to check that the name and email fields are filled in and display a warning message if not (you might not need JS for this 😜).
